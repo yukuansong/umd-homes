@@ -1,0 +1,28 @@
+.blogs {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+.column-left-blogs {
+    width: 75%;
+}
+.column-right-blogs {
+    width: 25%;
+    padding-left: 20px;
+} 
+.card-blogs {
+    background-color: white;
+}
+.row-blogs {
+    display: flex;
+}
+.fakeimg-blogs {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    .row-blogs {
+        flex-direction: column;
+    }
+}

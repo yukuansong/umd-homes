@@ -1,0 +1,59 @@
+
+.slideshow-container {
+    background-color:wheat;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.slideshow-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+}
+
+.slideshow-numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    position: absolute;
+    bottom: 80%;
+    padding: 8px 12px;
+}
+
+.fade-slide {
+    display: none;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev:visited, .next:visited {
+    background-color: rgba(0,0,0,0.8);
+    color: snow;
+    text-decoration: none;
+  }
+
+img {
+    vertical-align: middle;
+}

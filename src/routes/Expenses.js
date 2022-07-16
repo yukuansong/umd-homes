@@ -1,7 +1,27 @@
+import "./Expenses.css"
+
+const prefix ="workspace-";
 export default function Expenses() {
     return (
-      <main style={{ padding: "1rem 0" }}>
-        <h2>Expenses</h2>
-      </main>
+      <div className={prefix + "container"}>
+        <div className="item">
+          A
+        </div>
+        <div className="item">
+          B
+        </div>
+        <div className="item">
+          C
+        </div>
+        <div className="item">
+          D
+        </div>
+        <div className="item">
+          E
+        </div>
+        <div className="item">
+          F
+        </div>
+      </div>
     );
   }

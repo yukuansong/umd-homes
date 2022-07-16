@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  .content {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row1 {
+    background-color: #f1f1f1;
+  }
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  .myVideo {
+    float: right;
+    width: 66.67%;
+    height: 700px;
+  }
+
+  /* responsive pages */
+  @media screen and (max-width: 1000px) {
+    .content,
+    #myVideo {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background:blue;
+    /* background: #000; */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }

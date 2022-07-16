@@ -1,11 +1,15 @@
 import "./App.css";
-
-import { Link } from "react-router-dom";
+import LoginPage from './routes/loginPage';
+import {useState} from 'react';
+import View from './routes/View';
 
 function App() {
+  const [screen, setScreen] = useState("auth")
   return (
     <div>
-      <h1>BookKeeper</h1>
+      {
+        screen === "auth"? <LoginPage screen={screen} setScreen={setScreen} />: <View screen={screen} setScreen={setScreen}/>
+      }
 
     </div>
   );
