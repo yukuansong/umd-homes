@@ -15,9 +15,29 @@ import Home from "../home";
 import Header from "../header";
 import NavigationBar from "../navigationBar";
 import Logout from './logout';
+import {useEffect} from 'react';
+import axios from 'axios';
 
 function View(props) {
   const { screen, setScreen } = props;
+
+  const readCookie = async () => {
+    try {
+      const res = await axios.get('/read-cookie');
+      
+      console.log("====== read cookie!")
+      if (res.data.screen !== undefined) {
+        setScreen(res.data.screen);
+      }
+    } catch (e) {
+      setScreen('auth');
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    readCookie();
+  });
 
   return (
     <div>
