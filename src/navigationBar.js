@@ -1,8 +1,9 @@
 import "./navigationBar.css";
 import { Link } from "react-router-dom";
-import Header from "./header";
+
 
 function NavigationBar() {
+
   return (
     <div>
       <div className="navbar">
