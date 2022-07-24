@@ -15,6 +15,7 @@ import Home from "../home";
 import Header from "../header";
 import NavigationBar from "../navigationBar";
 import Logout from './logout';
+import {Registration} from './registration';
 import {useEffect} from 'react';
 import axios from 'axios';
 
@@ -47,6 +48,7 @@ function View(props) {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/logout" element={<Logout setScreen={setScreen} />} />
+          <Route path="/registration" element={<Registration/>} />
         </Routes>
       </Router>
     </div>

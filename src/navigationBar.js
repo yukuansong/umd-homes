@@ -15,6 +15,7 @@ function NavigationBar() {
         <Link to="/blogs">Blogs</Link>
         <Link to="/how2">HowTo</Link>
         <Link to="/logout">Logout</Link>
+        <Link to="/registration">Registration</Link>
       </div>
     </div>
   );
